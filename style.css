@@ -4,3 +4,44 @@ html {
     background-color: #00F5D4;
     font-family: 'Ubuntu', Arial, sans-serif;
 }
+
+body {
+    margin:0;
+}
+
+nav {
+    background-color: #FEE440;
+    width: 100%;
+    color: #00F5D4;
+    padding: 0.5rem;
+}
+
+nav p {
+    display: inline-block;
+    margin: 10px 1rem;
+    font-size: 1rem;
+}
+
+a {
+    color: #9B5DE5;
+    font-weight: bold;
+}
+
+header {
+    background-color: #F15BB5;
+    color:#00F5D4;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+
+footer {
+    background-color: #9B5DE5;
+    color:#00F5D4;
+    padding: 1rem;
+}
