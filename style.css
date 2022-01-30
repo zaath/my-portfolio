@@ -1,5 +1,4 @@
 html {
-    box-sizing: border-box;
     font-size: 20px;
     background-color: rgba(0,245,212, 0.2);
     font-family: 'Ubuntu', Arial, sans-serif;
@@ -13,7 +12,7 @@ nav {
     background-color: #FEE440;
     width: 100%;
     color: #00F5D4;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     opacity: 0.5;
 }
 
@@ -51,15 +50,15 @@ main {
 }
 
 main:hover {
-    background-color: rgba(0,245,212, 1);;
+    background-color: rgba(0,245,212, 1);
 }
 
 #about-me {
-    min-height: 500px;
+    min-height: 400px;
 }
 
 #profile-desc {
-    max-width: 66%;
+    width: 64%;
     display: inline-block;
 }
 
@@ -92,6 +91,12 @@ figcaption {
         padding: 0.5rem;
 }
 
+ul {
+    line-height: 2;
+    list-style-type:circle;
+}
+
+
 footer {
     background-color: rgba(155,93,229,0.5);
     color:rgba(0,245,212, 0.8);
@@ -103,6 +108,54 @@ footer {
 footer:hover {
     background-color: rgba(155,93,229,1);
     color:#00F5D4;
-    padding:1rem;
+    padding: 1rem;
 }
 
+footer a {
+    color:rgba(0,245,212, 0.8);
+    margin: 0 1rem;
+}
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1,h2,h3 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    main:hover {
+        background-color: rgba(0,245,212, 0.2);
+    }
+
+    #profile-desc {
+        width: 100%;
+        display: block;
+    }
+    
+    #profile-pic-container {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+        text-align: center;
+        position: inherit;
+    }
+    
+    #profile-pic-container img {
+        border-radius: 50%;
+        padding:1rem;
+        opacity: 0.5;
+        height: 150px;
+        width:auto;
+        transition: all 0.5s linear;
+    }
+
+    figcaption {
+        display: none;
+    }
+}
